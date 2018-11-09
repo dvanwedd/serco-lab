@@ -1,0 +1,8 @@
+---
+- name: Install Packages
+  hosts: '{{ target_hosts }}'
+  tasks:
+    - name: Install Screen
+      yum:
+        name: screen
+        state: latest
