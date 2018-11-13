@@ -2,6 +2,7 @@
 - name: Install Packages
   hosts: '{{ target_hosts }}'
   become: yes
+  become_user: dvanwedd
   tasks:
     - name: Install Screen
       yum:
