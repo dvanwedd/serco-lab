@@ -3,6 +3,7 @@
   hosts: '{{ target_hosts }}'
   become: yes
   become_user: dvanwedd
+  connection: local
   tasks:
     - name: Install Screen
       yum:
